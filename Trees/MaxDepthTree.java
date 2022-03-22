@@ -15,6 +15,8 @@ class TreeNode {
 
 class Solution {
     
+
+    //Recursive soltion O(h)clea
     public int height(TreeNode root){
         if(root == null){
             return 0;
