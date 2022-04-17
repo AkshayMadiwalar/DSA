@@ -41,7 +41,7 @@ public class SubsetSum {
             for(int j=1;j<=sum;j++){
                 
                 if(set[i-1] <= j){
-                    dp[i][j] = Math.max(dp[i-1][j],dp[i-1][sum-set[i-1]]);
+                    dp[i][j] = Math.max(dp[i-1][j],dp[i-1][j-set[i-1]]);
                 }
                 else{
                     dp[i][j] = dp[i-1][j];
