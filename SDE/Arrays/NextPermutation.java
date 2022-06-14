@@ -21,7 +21,7 @@ public class NextPermutation {
             
         }
 
-
+    
         
         //reverse
         int start = i+1;

@@ -15,7 +15,6 @@ class Pair {
 
 class Solution {
     
-
     //Using 0-indexing for each node, and do a level order traversal
     //parent:0  lChild: 2i+1    rChild: 2i+2
     public int widthOfBinaryTree(TreeNode root) {

@@ -49,8 +49,7 @@ class Solution {
                 }
             }
             if(subList2.size()>0){
-                       ans.add(subList2);
-            
+                       ans.add(subList2);          
             }
      
         }
