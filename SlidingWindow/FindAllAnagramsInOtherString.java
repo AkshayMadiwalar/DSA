@@ -1,3 +1,7 @@
+package SlidingWindow;
+
+import java.util.*;
+
 public class FindAllAnagramsInOtherString {
 
     

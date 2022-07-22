@@ -1,72 +1,58 @@
 package Trees;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.Map;
 import java.util.Queue;
-import java.util.TreeMap;
 
-class Node {
-    int data;
-    Node left, right;
- 
-    public Node(int data)
-    {
-        this.data = data;
-        left = right = null;
+class Pair{
+    Node node;
+    int level;
+    Pair(Node node,int level){
+        this.node=node;
+        this.level=level;
     }
 }
-public class BottomViewofBinaryTree {
-    Node root;
- 
-    // function should print the topView of
-    // the binary tree
-    private void BottomView(Node root)
+
+class Solution
+{
+    //Function to return a list containing the bottom view of the given tree.
+    int min=Integer.MAX_VALUE;
+    int max=Integer.MIN_VALUE;
+    
+    public ArrayList <Integer> bottomView(Node root)
     {
-        class QueueObj {
-            Node node;
-            int hd;
- 
-            QueueObj(Node node, int hd)
-            {
-                this.node = node;
-                this.hd = hd;
-            }
-        }
-        Queue<QueueObj> q = new LinkedList<QueueObj>();
-        Map<Integer, Node> topViewMap
-            = new TreeMap<Integer, Node>();
- 
-        if (root == null) {
-            return;
-        }
-        else {
-            q.add(new QueueObj(root, 0));
-        }
- 
-        System.out.println(
-            "The bottom view of the tree is : ");
- 
-        // count function returns 1 if the container
-        // contains an element whose key is equivalent
-        // to hd, or returns zero otherwise.
-        while (!q.isEmpty()) {
-            QueueObj tmpNode = q.poll();
- 
-            topViewMap.put(tmpNode.hd, tmpNode.node);
+        // Code here
+        HashMap<Integer,Integer> map =new HashMap<>();
+        int min=Integer.MAX_VALUE;
+        int max=Integer.MIN_VALUE;
+        
+        Queue<Pair> queue = new LinkedList<>();
+        
+        queue.add(new Pair(root,0));
+        
+        while(!queue.isEmpty()){
+            Pair pair =  queue.poll();
             
- 
-            if (tmpNode.node.left != null) {
-                q.add(new QueueObj(tmpNode.node.left,
-                                   tmpNode.hd - 1));
+            map.put(pair.level,pair.node.data);
+            min=Math.min(min,pair.level);
+            max=Math.max(max,pair.level);
+            
+            Node node = pair.node;
+            
+            if(node.left!=null){
+                queue.add(new Pair(node.left,pair.level-1));
             }
-            if (tmpNode.node.right != null) {
-                q.add(new QueueObj(tmpNode.node.right,
-                                   tmpNode.hd + 1));
+            if(node.right!=null){
+                queue.add(new Pair(node.right,pair.level+1));
             }
         }
-        for (Map.Entry<Integer, Node> entry :
-             topViewMap.entrySet()) {
-            System.out.print(entry.getValue().data);
+        ArrayList<Integer> ans = new ArrayList<>();
+        
+        for(int i=min;i<=max;i++){
+            ans.add(map.get(i));
         }
+        return ans;
     }
+    
 }

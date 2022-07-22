@@ -1,3 +1,7 @@
+package SlidingWindow;
+
+import java.util.ArrayList;
+
 public class MaxSubarraySumWithSizeK {
 
     //SLiding window

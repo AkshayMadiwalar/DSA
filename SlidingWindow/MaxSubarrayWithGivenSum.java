@@ -1,3 +1,7 @@
+package SlidingWindow;
+
+import java.util.HashMap;
+
 public class MaxSubarrayWithGivenSum {
     
 
