@@ -1,3 +1,5 @@
+package SDE.ArraysIII;
+
 public class UniqueGridPaths {
 
 
@@ -25,9 +27,9 @@ public class UniqueGridPaths {
 
 
         //Optial Approach
-        int N = m+n-2;
-        int r = m-1;
-        return (int) ( fact(N) / (fact(N-r)*fact(r)));
+        // int N = m+n-2;
+        // int r = m-1;
+        // return (int) ( fact(N) / (fact(N-r)*fact(r)));
     }
 
 

@@ -1,3 +1,5 @@
+package SDE.ArraysIII;
+
 public class MajorityElement_Nby2 {
 
     //Moore's voting algorithm

@@ -9,14 +9,14 @@ public class CountNodesinCompleteBinaryTree {
         int lh=lheight(root);
         int rh=rheight(root);
         
-        if(lh==rh)  return (2<<lh)-1;
+        if(lh==rh)  return (int)Math.pow(2,lh)-1;
         
         return countNodes(root.left)+1+countNodes(root.right);
     }
     
     public int lheight(TreeNode root){
         int c=0;
-        while(root.left!=null){
+        while(root!=null){
             c++;
             root=root.left;
         }
@@ -25,7 +25,7 @@ public class CountNodesinCompleteBinaryTree {
     
     public int rheight(TreeNode root){
         int c=0;
-        while(root.right!=null){
+        while(root!=null){
             c++;
             root=root.right;
         }

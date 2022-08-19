@@ -1,3 +1,7 @@
+package SlidingWindow;
+
+import java.util.HashMap;
+
 public class LongestSubstringWithKUniqueCharacters {
     public int longestkSubstr(String s, int k) {
         // code here

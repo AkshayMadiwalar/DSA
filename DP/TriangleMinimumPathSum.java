@@ -4,6 +4,7 @@ import java.util.*;
 public class TriangleMinimumPathSum {
     
       
+    //Recursion-----
     public int minsum(List<List<Integer>> triangle, int i, int j){
         if(i==triangle.size()-1)
             return triangle.get(i).get(j);
@@ -13,6 +14,7 @@ public class TriangleMinimumPathSum {
         return Math.min(down,diagonal);
     }
     
+    //Memoization-----
     public int minsumMemo(List<List<Integer>> triangle, int i, int j,int[][] dp){
         if(i==triangle.size()-1)
             return triangle.get(i).get(j);
@@ -27,6 +29,8 @@ public class TriangleMinimumPathSum {
         return dp[i][j];
     }
     
+
+    // Tabulation ---- bottom up 
     public int minsumTab(List<List<Integer>> triangle,int[][] dp){
         
         int lastrow =   triangle.size()-1;

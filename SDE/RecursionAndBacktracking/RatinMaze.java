@@ -12,7 +12,7 @@ public class RatinMaze {
         }    
         
         //downward
-        if(i+1>n && visited[i+1][j]!=1 && m[i+1][j]==1){
+        if(i+1<n && visited[i+1][j]!=1 && m[i+1][j]==1){
             visited[i][j]=1;
             paths(m,n,i+1,j,str.append('D'),visited,ans);
             visited[i][j]=0;

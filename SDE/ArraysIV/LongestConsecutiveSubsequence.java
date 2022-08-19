@@ -1,3 +1,7 @@
+package SDE.ArraysIV;
+
+import java.util.HashSet;
+
 public class LongestConsecutiveSubsequence {
 
 

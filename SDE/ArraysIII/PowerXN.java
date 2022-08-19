@@ -1,3 +1,5 @@
+package SDE.ArraysIII;
+
 public class PowerXN {
     
     //Power(x,n)

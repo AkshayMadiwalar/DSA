@@ -1,3 +1,7 @@
+package SlidingWindow;
+
+import java.util.HashMap;
+
 public class PermutationInString {
     
     public boolean checkInclusion(String s2, String s1) {

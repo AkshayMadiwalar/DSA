@@ -1,3 +1,7 @@
+package Trees;
+
+import java.util.*;
+
 public class BinaryTreeAllPaths {
     List<Integer> list = new ArrayList<>();
     List<String> ans = new ArrayList<>();

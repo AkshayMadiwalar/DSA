@@ -1,6 +1,19 @@
 package DP.JumpGame;
 
 public class JumpGameI {
+
+
+
+
+    // bool canJump(int A[], int n) {
+    //     int last=n-1,i,j;
+    //     for(i=n-2;i>=0;i--){
+    //         if(i+A[i]>=last)last=i;
+    //     }
+    //     return last<=0;
+    // }
+
+
     public boolean canJump(int[] nums) {
         int[] dp = new int[nums.length];
        // return jump(0,nums,dp);

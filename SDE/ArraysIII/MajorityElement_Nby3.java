@@ -1,3 +1,7 @@
+package SDE.ArraysIII;
+
+import java.util.*;
+
 public class MajorityElement_Nby3 {
 
     //Moore's algorithm 

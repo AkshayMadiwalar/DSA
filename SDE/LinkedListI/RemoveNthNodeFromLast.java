@@ -1,3 +1,5 @@
+package SDE.LinkedListI;
+
 public class RemoveNthNodeFromLast {
 
     class ListNode {
