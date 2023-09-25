@@ -38,7 +38,7 @@ public class CountInversions {
                 nums[k]=b[j];
                 k++;
                 j++;
-                swaps = (m+1)-(l+i);   //count inversions
+                swaps = (m+1)-(l+i);  //count inversions
             }
         }
         while(i<n1){

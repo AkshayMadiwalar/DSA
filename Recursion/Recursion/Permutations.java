@@ -1,3 +1,7 @@
+package Recursion;
+
+import java.util.*;
+
 public class Permutations {
 
     // ---------------Approach 1--------------------- 
@@ -40,6 +44,13 @@ public class Permutations {
             perm2(index+1,nums,ans);
             swap(nums,i,index);
         }
+    }
+
+
+    public void swap(int[] nums, int a, int b){
+        int t = nums[a];
+        nums[a]=nums[b];
+        nums[b]= t; 
     }
     
 

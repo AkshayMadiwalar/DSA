@@ -33,7 +33,7 @@ class Solution {
         return rheight + 1;
     }
     public boolean isBalanced(TreeNode root) {
-        int h = height(root);
+        height(root);
         return ans;
     }
 }

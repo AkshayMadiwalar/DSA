@@ -12,7 +12,7 @@ class Solution {
             return;
         }
         
-        list.add(root.val);
+        list.add(root.val); 
         io(root.left);
         io(root.right);
         

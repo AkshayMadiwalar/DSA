@@ -26,7 +26,7 @@ public class ConstructBSTfromLevelOrderTraversal {
         else{
             root.right = constructBst(root.right,data);
         }
-        
+
         return root;
     }
 }

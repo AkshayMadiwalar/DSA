@@ -6,7 +6,7 @@ public class SubArraySumEqualsK {
     int count = 0;
     public int subarraySum(int[] nums, int k) {
         int prefixsum = 0;
-        int[] ps = new int[nums.length];
+        //int[] ps = new int[nums.length];
         
         HashMap<Integer,Integer> map = new HashMap<>();
         map.put(0,1);

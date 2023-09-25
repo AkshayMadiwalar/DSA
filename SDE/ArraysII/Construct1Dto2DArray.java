@@ -1,4 +1,4 @@
-package SDE.ArraysII;
+package ArraysII;
 
 public class Construct1Dto2DArray {
     public int[][] construct2DArray(int[] original, int m, int n) {

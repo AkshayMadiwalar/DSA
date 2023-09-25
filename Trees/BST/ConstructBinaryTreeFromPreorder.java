@@ -14,6 +14,7 @@ public class ConstructBinaryTreeFromPreorder {
         TreeNode root = new TreeNode(preorder[ind[0]]);
         ind[0]++;
         root.left=bst(preorder,ind,root.val);
+        
         root.right=bst(preorder,ind,ub);
         return root;
     }

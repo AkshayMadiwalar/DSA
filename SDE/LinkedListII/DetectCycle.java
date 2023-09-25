@@ -1,3 +1,5 @@
+package SDE.LinkedListII;
+
 public class DetectCycle {
     public boolean hasCycle(ListNode head) {
         ListNode first=head;
