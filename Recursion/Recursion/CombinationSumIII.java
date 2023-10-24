@@ -27,6 +27,7 @@ public class CombinationSumIII {
         for(int i=ind;i<nums.length;i++){
             if(nums[i]>target)
                 break;
+                
             ds.add(nums[i]);
             combination(i+1,nums,target-nums[i],k,ds);
             ds.remove(ds.size()-1);

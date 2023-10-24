@@ -30,6 +30,7 @@ public class BackSpaceStringCompare {
                 continue;
             else{
                 stk.pop();
+                
             }
         }
         

@@ -8,7 +8,6 @@ import java.util.Queue;
 
 public class BFS {
     
-
     public void bfs(int V,ArrayList<ArrayList<Integer>> adj){
         boolean[] visited = new boolean[V];
 

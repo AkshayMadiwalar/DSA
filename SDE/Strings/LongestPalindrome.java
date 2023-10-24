@@ -22,6 +22,8 @@ public class LongestPalindrome {
             }
         }
         
+        // k distinct characters to
+        // k+1 distinct c
         return map.size()==evens?len:len+1;
     }
 }

@@ -9,12 +9,12 @@ public class NextGreaterElement {
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
         Stack<Integer> stack = new Stack<>();
             
-        stack.push(nums2[0]);
+        stack.push(nums2[0])
         HashMap<Integer,Integer> map = new HashMap<>();
         
         for(int i=1;i<nums2.length;i++){
-            if(stack.size()==0){
-                stack.push(nums2[i]);
+            if(stack.size()==0){ 
+                stack.push(nums2[i]); 
                 continue;
             }
             while(nums2[i]>stack.peek()){

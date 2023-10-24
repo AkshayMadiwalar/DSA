@@ -37,10 +37,8 @@ public class TaskSchedule {
             time++;
             
             Task curTask = pq.poll();
-            
             if(curTask != null) {
                 curTask.freq--;
-                
                 // cur task not completed
                 if(curTask.freq > 0) {
                     // add it to cool down q
@@ -50,17 +48,13 @@ public class TaskSchedule {
             }
             
             Task coolDownTask = coolDownQ.peek();
-            
             if(coolDownTask != null) {
-                
                 if(coolDownTask.notAvailableTillTime <= time) {
                     coolDownQ.remove();
                     pq.add(coolDownTask);
                 }
-            }
-            
-        }
-        
+            }   
+        }        
         return time;
     }
 }
