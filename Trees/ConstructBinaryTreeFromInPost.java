@@ -23,7 +23,6 @@ public class ConstructBinaryTreeFromInPost {
         if(pstart>pend || istart>iend)  return null;
         
         TreeNode root = new TreeNode(postorder[pend]);
-        
         int iroot = map.get(postorder[pend]);
         int numsleft = iroot-istart;
         

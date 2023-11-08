@@ -9,7 +9,7 @@ public class RatinMaze {
         if(i==n-1 && j==n-1){
             ans.add(str.toString());
             return;
-        }    
+        }  
         
         //downward
         if(i+1<n && visited[i+1][j]!=1 && m[i+1][j]==1){
